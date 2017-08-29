@@ -21,6 +21,7 @@ namespace NAGP.Products.Controllers
         {
             var mongoClient = new MongoClient(ConfigurationManager.AppSettings["MongoDBConectionString"]);
             this.database = mongoClient.GetDatabase("test");          
+
         }
 
         // GET: api/Product
